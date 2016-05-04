@@ -7,6 +7,10 @@ public class Stark {
 	public Stark(){	
 		pil = new int[5];
 	}
+
+	public int[] pop() {
+		return null;
+	}
 	
 	
 
