@@ -17,6 +17,13 @@ public class TestStark {
 	@Test 
 	public void newStarkBasio(){
 		Stark pila=new Stark();
-		assertEquals(null, pila.pop());
+		assertEquals(true, pila.estaBasio());
+	}
+	
+	@Test
+	public void agregarUnoResultadoNoBasio(){
+		Stark pila=new Stark();
+		pila.pop(1);
+		assertEquals(false, pila.estaBasio());
 	}
 }
